@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.iot.dto.Items" table="items">
+		<meta attribute="class-description">
+			This class contains the Items Data within Library catalog.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="item_id" column="item_id" type="string" />
+		<property name="beacon_id" column="beacon_id" type="string" />
+		<property name="item_title" column="item_title" type="string" />
+		<property name="item_author" column="item_author" type="string" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.iot.dto.Beacon" table="beacon">
+		<meta attribute="class-description">
+			This class contains the Beacons Information placed within Library
+			catalog.
+		</meta>
+
+		<id name="id" type="string" column="id" />
+
+		<property name="department" column="department" type="string" />
+	</class>
+</hibernate-mapping>

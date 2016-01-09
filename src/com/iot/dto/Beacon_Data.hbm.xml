@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.iot.dto.Beacon_Data" table="beacon_data">
+		<meta attribute="class-description">
+			This class contains the Beacon Data required to fill up the charts.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="beaconId" column="beacon_id" type="string" />
+		<property name="timeIn" column="time_in" type="timestamp" />
+		<property name="timeOut" column="time_out" type="timestamp" />
+		<property name="deviceId" column="user_id" type="string" />
+	</class>
+</hibernate-mapping>
